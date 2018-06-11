@@ -441,10 +441,13 @@ img {
   color: aliceblue;
   line-height: 1.5;
   background-color: #F60B0E;
-  -webkit-transition: all .7s;
-  -o-transition: all .7s;
-  transition: all .7s; }
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
   .content-btnera__cta:hover {
+    -webkit-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
     background-color: #151414; }
 
 .content-btnera .icon-user {
