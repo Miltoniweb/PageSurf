@@ -367,26 +367,27 @@ img {
 .content-menu-logo {
   padding: 0 1em; }
 
-.main-nav {
-  display: none;
-  -webkit-transition: all 2s;
-  -o-transition: all 2s;
-  transition: all 2s; }
-  .main-nav .main-menu {
-    background-color: #EFEFEF;
-    text-align: center; }
-    .main-nav .main-menu__link {
-      display: block;
-      padding: 1em;
-      color: #151414;
-      -webkit-transition: all .6s;
-      -o-transition: all .6s;
-      transition: all .6s; }
-      .main-nav .main-menu__link:hover {
-        color: #F60B0E; }
+.main-menu {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background-color: #EFEFEF;
+  text-align: center; }
+  .main-menu__link {
+    display: block;
+    padding: 1em;
+    color: #151414;
+    -webkit-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s; }
+    .main-menu__link:hover {
+      color: #F60B0E; }
 
 .show-menu {
-  display: block; }
+  max-height: 1000px;
+  overflow: none; }
 
 .content-banner {
   position: relative; }
