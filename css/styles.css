@@ -524,21 +524,29 @@ img {
     color: #777777; }
 
 .content-provide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  padding: 1.75em 0;
   color: #EFEFEF;
-  background-color: #1D1C1C; }
+  background-color: #1D1C1C;
+  text-align: center; }
+  .content-provide__title {
+    margin-bottom: 16px; }
   .content-provide p {
     color: darkgray; }
+  .content-provide .content-icon {
+    padding: 0 16px;
+    margin-bottom: 16px; }
+    .content-provide .content-icon .inner-icon {
+      line-height: 2.5;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid white; }
+    .content-provide .content-icon [class^="icon-"] {
+      position: relative;
+      top: .1em;
+      font-size: 2em; }
+    .content-provide .content-icon__title {
+      margin: 1.625em 0 0.625em 0; }
 
 .content-pricing-table {
   background-color: #EFEFEF; }
