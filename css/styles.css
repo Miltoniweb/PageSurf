@@ -562,7 +562,51 @@ img {
       margin: 1.625em 0 0.625em 0; }
 
 .content-pricing-table {
-  background-color: #EFEFEF; }
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #313131; }
+  .content-pricing-table__title {
+    padding-bottom: 1em;
+    font-size: 2em;
+    text-align: center;
+    color: #EFEFEF; }
+  .content-pricing-table .card-pricing-table {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 1em;
+    text-align: center;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    .content-pricing-table .card-pricing-table:nth-of-type(2n+1):hover {
+      -webkit-transform: scale(0.9, 0.9);
+      -ms-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9); }
+      .content-pricing-table .card-pricing-table:nth-of-type(2n+1):hover .pricing-top, .content-pricing-table .card-pricing-table:nth-of-type(2n+1):hover a {
+        background-color: red; }
+    .content-pricing-table .card-pricing-table:nth-of-type(2) .pricing-top, .content-pricing-table .card-pricing-table:nth-of-type(2) a {
+      background-color: red; }
+    .content-pricing-table .card-pricing-table .pricing-top {
+      padding: 1em;
+      background-color: black;
+      color: #EFEFEF; }
+    .content-pricing-table .card-pricing-table__title {
+      font-weight: 400;
+      font-size: 1.375em; }
+    .content-pricing-table .card-pricing-table__price {
+      font-weight: 700;
+      font-size: 1.5em; }
+    .content-pricing-table .card-pricing-table__description {
+      margin-bottom: 0.75em;
+      color: #313131; }
+    .content-pricing-table .card-pricing-table__btn {
+      padding: .6em 1em;
+      border-radius: .2em;
+      color: #EFEFEF;
+      background-color: black; }
+    .content-pricing-table .card-pricing-table .pricing-bottom {
+      padding: 2em 1em;
+      background-color: #EFEFEF; }
 
 .content-footer {
   background-color: #1D1C1C; }
