@@ -609,4 +609,78 @@ img {
       background-color: #EFEFEF; }
 
 .content-footer {
+  padding-top: 1.625em;
+  padding-bottom: 1.625em;
   background-color: #1D1C1C; }
+  .content-footer__about, .content-footer__links, .content-footer__newsletter {
+    margin: 16px 0;
+    padding: 0 16px; }
+  .content-footer__title {
+    margin-bottom: 16px;
+    font-size: 1.5em;
+    color: #EFEFEF; }
+  .content-footer__description {
+    margin-bottom: 16px;
+    font-size: 1em;
+    color: #afafaf; }
+  .content-footer .icon-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .content-footer .icon-social__item {
+      margin-right: 16px; }
+    .content-footer .icon-social__link {
+      color: #afafaf;
+      -webkit-transition: all .6s;
+      -o-transition: all .6s;
+      transition: all .6s; }
+      .content-footer .icon-social__link:hover {
+        color: #F60B0E; }
+  .content-footer .menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .content-footer .menu-footer__item {
+      margin-bottom: 11px; }
+    .content-footer .menu-footer__link {
+      color: #afafaf;
+      -webkit-transition: all .6s;
+      -o-transition: all .6s;
+      transition: all .6s; }
+      .content-footer .menu-footer__link:hover {
+        color: #F60B0E; }
+  .content-footer .form-new__input {
+    width: 100%;
+    border-radius: .3em;
+    border: none;
+    margin-bottom: 16px;
+    padding: 13px;
+    text-align: center;
+    letter-spacing: 1.5px; }
+  .content-footer .form-new__btn {
+    display: block;
+    width: 100%;
+    padding: 13px 16px;
+    border: none;
+    border-radius: .3em;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #F60B0E;
+    color: #EFEFEF;
+    -webkit-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s; }
+    .content-footer .form-new__btn:hover {
+      background-color: #151414; }
+  .content-footer .content-copy {
+    text-align: center;
+    font-size: 0.9375em;
+    letter-spacing: 1px;
+    color: #afafaf; }
+    .content-footer .content-copy a {
+      color: #F60B0E; }
