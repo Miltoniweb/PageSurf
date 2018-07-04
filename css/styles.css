@@ -360,6 +360,7 @@ img {
   align-items: center; }
 
 .header-inner-wrap {
+  position: relative;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
@@ -377,13 +378,29 @@ img {
   text-align: center; }
   .main-menu__link {
     display: block;
-    padding: 1em;
+    padding: .8em;
     color: #151414;
     -webkit-transition: all .6s;
     -o-transition: all .6s;
     transition: all .6s; }
     .main-menu__link:hover {
       color: #F60B0E; }
+  @media screen and (min-width: 1024px) {
+    .main-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+      max-height: 1000px;
+      -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+      transform: translate(50%, 0);
+      background-color: #fff; }
+      .main-menu__link {
+        margin-right: 32px; } }
 
 .show-menu {
   max-height: 1000px;
@@ -432,6 +449,9 @@ img {
     cursor: pointer; }
     .content-menu-logo__icon .icon-menu:hover {
       background-color: #d1080a; }
+  @media screen and (min-width: 1024px) {
+    .content-menu-logo__icon {
+      display: none; } }
 
 .content-btnera__cta {
   display: block;
@@ -529,7 +549,14 @@ img {
   background-color: #1D1C1C;
   text-align: center; }
   .content-provide__title {
-    margin-bottom: 16px; }
+    margin: 32px 0;
+    font-size: 2em; }
+    @media screen and (min-width: 480px) {
+      .content-provide__title {
+        font-size: 2.25em; } }
+    @media screen and (min-width: 1024px) {
+      .content-provide__title {
+        font-size: 2.75em; } }
   .content-provide p {
     color: darkgray; }
   .content-provide .content-icon {
@@ -556,12 +583,53 @@ img {
       height: 80px;
       border-radius: 50%;
       border: 2px solid white; }
+      @media screen and (min-width: 480px) {
+        .content-provide .content-icon .inner-icon {
+          width: 100px;
+          height: 100px;
+          line-height: 3; } }
+      @media screen and (min-width: 1024px) {
+        .content-provide .content-icon .inner-icon {
+          width: 110px;
+          height: 110px;
+          line-height: 3; } }
     .content-provide .content-icon [class^="icon-"] {
       position: relative;
       top: .1em;
       font-size: 2em; }
+      @media screen and (min-width: 480px) {
+        .content-provide .content-icon [class^="icon-"] {
+          font-size: 2.125em; } }
+      @media screen and (min-width: 1024px) {
+        .content-provide .content-icon [class^="icon-"] {
+          font-size: 2.25em; } }
     .content-provide .content-icon__title {
       margin: 1.625em 0 0.625em 0; }
+      @media screen and (min-width: 1024px) {
+        .content-provide .content-icon__title {
+          font-size: 1.5em; } }
+    @media screen and (max-width: 960px) {
+      .content-provide .content-icon {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 1em);
+        flex: 1 0 calc(50% - 1em); } }
+  @media screen and (min-width: 480px) {
+    .content-provide .inner-wrap-desktop__provide {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 768px) {
+    .content-provide .inner-wrap-desktop__provide {
+      margin-right: auto;
+      margin-left: auto;
+      width: 750px; } }
+  @media screen and (min-width: 960px) {
+    .content-provide .inner-wrap-desktop__provide {
+      width: 80%;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; } }
 
 .content-pricing-table {
   padding-top: 2em;
@@ -572,9 +640,15 @@ img {
     font-size: 2em;
     text-align: center;
     color: #EFEFEF; }
+    @media screen and (min-width: 768px) {
+      .content-pricing-table__title {
+        font-size: 2.25em; } }
+    @media screen and (min-width: 768px) {
+      .content-pricing-table__title {
+        font-size: 2.75em; } }
   .content-pricing-table .card-pricing-table {
     margin: auto;
-    width: 80%;
+    width: 60%;
     padding-bottom: 1em;
     text-align: center;
     -webkit-transition: all 1s;
@@ -606,9 +680,33 @@ img {
       border-radius: .2em;
       color: #EFEFEF;
       background-color: black; }
+      @media screen and (min-width: 768px) {
+        .content-pricing-table .card-pricing-table__btn {
+          position: relative;
+          top: 2em; } }
     .content-pricing-table .card-pricing-table .pricing-bottom {
       padding: 2em 1em;
       background-color: #EFEFEF; }
+      @media screen and (min-width: 768px) {
+        .content-pricing-table .card-pricing-table .pricing-bottom {
+          padding: 4em 1em; } }
+    @media screen and (min-width: 768px) {
+      .content-pricing-table .card-pricing-table {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc( 33% - 1em);
+        flex: 0 1 calc( 33% - 1em); } }
+  @media screen and (min-width: 768px) {
+    .content-pricing-table .inner-wrap-desktop__pricing {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; } }
+  @media screen and (min-width: 960px) {
+    .content-pricing-table .inner-wrap-desktop__pricing {
+      margin-right: auto;
+      margin-left: auto;
+      width: 85%; } }
 
 .content-footer {
   padding-top: 1.625em;
@@ -617,6 +715,11 @@ img {
   .content-footer__about, .content-footer__links, .content-footer__newsletter {
     margin: 16px 0;
     padding: 0 16px; }
+    @media screen and (min-width: 999px) {
+      .content-footer__about, .content-footer__links, .content-footer__newsletter {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(33% - 1em);
+        flex: 0 1 calc(33% - 1em); } }
   .content-footer__title {
     margin-bottom: 16px;
     font-size: 1.5em;
@@ -680,9 +783,25 @@ img {
     .content-footer .form-new__btn:hover {
       background-color: #151414; }
   .content-footer .content-copy {
+    margin-top: 48px;
+    padding: 32px 0;
     text-align: center;
     font-size: 0.9375em;
     letter-spacing: 1px;
-    color: #afafaf; }
+    color: #afafaf;
+    border-top: 1px solid #313131; }
     .content-footer .content-copy a {
       color: #F60B0E; }
+  @media screen and (min-width: 768px) {
+    .content-footer .inner-wrap-desktop__footer {
+      margin-left: auto;
+      margin-right: auto;
+      width: 750px; } }
+  @media screen and (min-width: 999px) {
+    .content-footer .inner-wrap-desktop__footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      width: 95%; } }
